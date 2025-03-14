@@ -8,6 +8,7 @@ import * as THREE from 'three'
 import {Leva, useControls} from "leva"
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import {useFrame } from '@react-three/fiber'
+import {AWSLogo} from "../components/AWS"
 
 const Hero = () => {
   const x = useControls('BigRoom', {
@@ -70,11 +71,15 @@ const Hero = () => {
                     >  
                     </BigRoom>
                         <Atom 
-                        rotation={[x.rotationX,x.rotationY,x.rotationZ]}
-                        scale={[x.scale,x.scale, x.scale]}
-                        position={[x.positionX,x.positionY,x.positionZ]}
+                        rotation={[9.5,2.7,3.3]}
+                        scale={0.7}
+                        position={[-13.1,5.9,0]}
                         />
-                    
+                    <AWSLogo
+                     rotation={[x.rotationX,x.rotationY,x.rotationZ]}
+                    position={[x.positionX,x.positionY,x.positionZ]}
+                    scale={[x.scale,x.scale, x.scale]}
+                    />
                     <EffectComposer>
                       <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
                     </EffectComposer>
