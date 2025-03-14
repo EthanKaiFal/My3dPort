@@ -65,14 +65,17 @@ body {
 }
 
 .threejs-container{
-  min-height: 100vh;
+  min-height: 80vh;
   width:100%;
   display:flex;
+  height: 80vh;
+  align-self: center;
 }
 
 .canvas{
+  display: block;
   width:100%;
-  height:100%;
+  height:25%;
 }
 
 
@@ -82,18 +85,8 @@ body {
 
 
 
-@media (max-width: 639px) {
-  .menu-icon{
-    background-color: transparent;
-    padding:0;
-    color: #d1d5db;
-  }
-  .menu-icon:hover{
-    color:white;
-  }
-}
 
-@media (min-width: 640px) {
+
   .menu-icon{
     background-color: transparent;
     padding:0;
@@ -103,7 +96,6 @@ body {
   .menu-icon:hover{
     color:white;
   }
-}
 
 /* Space */
 .c-space {
@@ -137,19 +129,15 @@ body {
 /* Navigation */
 .nav-ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   position: relative;
   z-index: 20;
 }
 
-@media (min-width: 768px) {
-.nav-ul {
-  flex-direction: row;
-  gap: 1.5rem;
-}
-}
+
+
 
 .nav-li {
   color: #6b7280;
