@@ -12,6 +12,7 @@ import { VisualLogo } from '../components/VisualStudio'
 import * as THREE from 'three'
 import { MCDog } from '../components/MCDog'
 import { CLogo } from '../components/CLogo'
+import { HeroCam } from '../components/HeroCam'
 
 const Hero = () => {
   const x = useControls('BigRoom', {
@@ -67,7 +68,12 @@ scene.background = new THREE.Color("#505050");
         <Leva></Leva>
                 <Canvas className='canvas'>
                   <Suspense fallback={<CanvasLoader/>}>
-                    <PerspectiveCamera makeDefault position={[0,0,20]}/>
+                    <PerspectiveCamera makeDefault 
+                    position={[0,0,20]}
+                    // rotation={[x.rotationX,x.rotationY,x.rotationZ]}
+                    // position={[x.positionX,x.positionY,x.positionZ]}
+                    />
+                    <HeroCam>
                     <BigRoom 
                     scale={0.7} 
                     position={[5.7,10.0,-199]} 
@@ -77,29 +83,31 @@ scene.background = new THREE.Color("#505050");
                     //scale={[x.scale,x.scale, x.scale]}
                     >  
                     </BigRoom>
+                    </HeroCam>
+
                         <Atom 
                         rotation={[9.5,2.7,3.3]}
                         scale={0.7}
-                        position={[-13.1,5.9,0]}
+                        position={[-12.1,-4.5,0]}
                         />
                     <AWSLogo
                     rotation={[3.9,3.9,3.5]}
-                    position={[71,10,-94]}
+                    position={[85,10,-94]}
                     scale={2.2}
                     />
                     <VisualLogo
-                    rotation={[3.7,-2.1,-3.1]}
-                    position={[38.9,27.3,-220]}
-                    scale={2.7}
+                    rotation={[3.5,3.3,9.3]}
+                    position={[21,-7,-13]}
+                    scale={1.0}
                     />
-                    <MCDog
+                    {/* <MCDog
                     rotation={[3.7,7.1,3.3]}
                     position={[58,17,-226]}
                     scale={0.9}
-                    />
+                    /> */}
                     <CLogo
                     rotation={[3.5,2.1,3.1]}
-                    position={[-133,4,-199]}
+                    position={[-150,50,-199]}
                     scale={0.7}
                     />
                     <EffectComposer>
@@ -109,6 +117,9 @@ scene.background = new THREE.Color("#505050");
                     <directionalLight position={[0,0,10]} intensity={0.5}/>
                   </Suspense>
                 </Canvas>
+                <div className="next-section">
+                  <a href="#contact" style={{width: "fit-content"}}> </a>
+                </div>
         </div>
     </section>
   )
