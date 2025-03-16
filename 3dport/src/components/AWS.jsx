@@ -7,10 +7,12 @@ Source: https://sketchfab.com/3d-models/aws-logo-8aefa880ecee48778c4b3725b62c064
 Title: AWS Logo
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
-import {useFrame } from '@react-three/fiber'
-import * as THREE from 'three'
+import React, { useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
+import {useFrame } from '@react-three/fiber';
+import * as THREE from 'three';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 export const AWSLogo = (props) => {
   const { nodes, materials } = useGLTF('/models/aws_logo.glb')
@@ -18,9 +20,17 @@ export const AWSLogo = (props) => {
     const groupRef = useRef();
     useFrame(() => {
         if (groupRef.current) {
-          groupRef.current.rotation.y += 0.01  // Adjust the speed by changing the value
+          //groupRef.current.rotation.y += 0.01  // Adjust the speed by changing the value
         }
       })
+    useGSAP(()=>{
+      gsap.to(groupRef.current.position, {
+        y:groupRef.current.position.y+5.5,
+        duration:2,
+        repeat:-1,
+        yoyo: true
+      })
+    })
   return (
     <group {...props} dispose={null} ref={groupRef}>
       <group scale={0.01}>
@@ -28,7 +38,7 @@ export const AWSLogo = (props) => {
           castShadow
           receiveShadow
           geometry={nodes.ArrowBody_Material001_0.geometry}
-          material={new THREE.MeshStandardMaterial({ color: new THREE.Color(0xFF5733) })}
+          material={new THREE.MeshLambertMaterial({ color: new THREE.Color(0xFF5733) })}
           position={[-13.076, 155.698, -20.264]}
           scale={16067.461}
         />

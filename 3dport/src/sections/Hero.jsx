@@ -1,26 +1,29 @@
 import {React, Suspense, useMemo, useRef} from 'react'
 import '../index.css'
 import { Canvas } from '@react-three/fiber'
-import { PerspectiveCamera, Float, Trail, Sphere } from '@react-three/drei'
+import { PerspectiveCamera } from '@react-three/drei'
 import {BigRoom} from '../components/BigRoom'
 import CanvasLoader from '../components/CanvasLoader'
-import * as THREE from 'three'
 import {Leva, useControls} from "leva"
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
-import {useFrame } from '@react-three/fiber'
 import {AWSLogo} from "../components/AWS"
+import {Atom} from "../components/Atoms"
+import { VisualLogo } from '../components/VisualStudio'
+import * as THREE from 'three'
+import { MCDog } from '../components/MCDog'
+import { CLogo } from '../components/CLogo'
 
 const Hero = () => {
   const x = useControls('BigRoom', {
     positionX:{
       value: 2.5,
-      min: -30,
-      max:10
+      min: -200,
+      max:100
     },
     positionY:{
       value: 2.5,
-      min: -10,
-      max:10
+      min: -40,
+      max:100
     },
     positionZ:{
       value: 2.5,
@@ -47,7 +50,11 @@ const Hero = () => {
       min: -10,
       max:10
     },
-  })
+  }
+  
+)
+const scene = new THREE.Scene(); // initialising the scene
+scene.background = new THREE.Color("#505050");
   return (
     <section className="hero-section">
         Hero
@@ -67,7 +74,7 @@ const Hero = () => {
                     rotation={[3.7, -2.5,3.1]}
                     //rotation={[x.rotationX,x.rotationY,x.rotationZ]}
                     //position={[x.positionX,x.positionY,x.positionZ]}
-                    //</Suspense>scale={[x.scale,x.scale, x.scale]}
+                    //scale={[x.scale,x.scale, x.scale]}
                     >  
                     </BigRoom>
                         <Atom 
@@ -76,15 +83,30 @@ const Hero = () => {
                         position={[-13.1,5.9,0]}
                         />
                     <AWSLogo
-                     rotation={[x.rotationX,x.rotationY,x.rotationZ]}
-                    position={[x.positionX,x.positionY,x.positionZ]}
-                    scale={[x.scale,x.scale, x.scale]}
+                    rotation={[3.9,3.9,3.5]}
+                    position={[71,10,-94]}
+                    scale={2.2}
+                    />
+                    <VisualLogo
+                    rotation={[3.7,-2.1,-3.1]}
+                    position={[38.9,27.3,-220]}
+                    scale={2.7}
+                    />
+                    <MCDog
+                    rotation={[3.7,7.1,3.3]}
+                    position={[58,17,-226]}
+                    scale={0.9}
+                    />
+                    <CLogo
+                    rotation={[3.5,2.1,3.1]}
+                    position={[-133,4,-199]}
+                    scale={0.7}
                     />
                     <EffectComposer>
                       <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
                     </EffectComposer>
                     <ambientLight intensity={1}/>
-                    <directionalLight position={[10,10,10]} intensity={0.5}/>
+                    <directionalLight position={[0,0,10]} intensity={0.5}/>
                   </Suspense>
                 </Canvas>
         </div>
@@ -92,40 +114,7 @@ const Hero = () => {
   )
 }
 
-function Atom(props) {
-  const points = useMemo(() => new THREE.EllipseCurve(0, 0, 3, 1.15, 0, 2 * Math.PI, false, 0).getPoints(100), [])
-  return (
-    //<Float speed={4} rotationIntensity={1} floatIntensity={2}>
-    <group {...props}>
-      <Electron position={[0, 0, 0.5]} speed={6} />
-      <Electron position={[0, 0, 0.5]} rotation={[0, 0, Math.PI / 3]} speed={6.5} />
-      <Electron position={[0, 0, 0.5]} rotation={[0, 0, -Math.PI / 3]} speed={7} />
-      <Sphere args={[0.35, 64, 64]}>
-        <meshBasicMaterial color={[6, 0.5, 2]} toneMapped={false} />
-      </Sphere>
-    </group>
-    //</Float>
-  )
-}
 
-function Electron({ radius = 2.75, speed = 6, ...props }) {
-  const ref = useRef()
-  useFrame((state) => {
-    const t = state.clock.getElapsedTime() * speed
-    ref.current.position.set(Math.sin(t) * radius, (Math.cos(t) * radius * Math.atan(t)) / Math.PI / 1.25, 0)
-  })
-  return (
-    //<Float speed={4} rotationIntensity={1} floatIntensity={2}>
-    <group {...props}>
-      <Trail  target={ref} local={false} width={5} length={10} color={new THREE.Color(2, 1, 10)} attenuation={(t) => t * t}>
-        <mesh ref={ref}>
-          <sphereGeometry args={[0.25]} />
-          <meshBasicMaterial color={[10, 1, 10]} toneMapped={false} />
-        </mesh>
-      </Trail>
-    </group>
-    //</Float>
-  )
-}
+
 
 export default Hero;
