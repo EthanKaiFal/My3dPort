@@ -96,6 +96,68 @@ body {
   padding-right: 1.25rem;
 }
 
+//bento box
+.grid-setup {
+  display: grid;
+  height: 100%;
+  gap: 5px;
+}
+
+@media (min-width: 1280px) {
+  .xl-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.grid-item1 {
+  grid-column: span 1; /* Equivalent to col-span-1 */
+}
+
+@media (min-width: 1280px) {
+  .grid-item1 {
+    grid-row: span 3; /* Equivalent to xl:row-span-3 */
+  }
+}
+
+.grid-item2 {
+  grid-column: span 1; /* Equivalent to col-span-1 */
+}
+
+@media (min-width: 1280px) {
+  .grid-item2 {
+    grid-row: span 4; /* Equivalent to xl:row-span-3 */
+  }
+}
+
+.grid-img {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+
+.grid-box-cont2 {
+  border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+  width: 100%; /* Equivalent to w-full */
+  display: flex; /* Equivalent to flex */
+  justify-content: center; /* Equivalent to justify-center */
+  align-items: center; /* Equivalent to items-center */
+  height: fit-content; /* Equivalent to h-fit */
+}
+
+@media (min-width: 640px) {
+  .grid-box-cont2 {
+    height: 326px; /* Equivalent to sm:h-[326px] */
+  }
+}
+//mneeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxttttttttttt
+
 @media (min-width: 640px) {
   /* sm breakpoint */
   .custom-class {
