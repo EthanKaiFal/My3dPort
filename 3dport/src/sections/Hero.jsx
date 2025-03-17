@@ -13,13 +13,14 @@ import * as THREE from 'three'
 import { MCDog } from '../components/MCDog'
 import { CLogo } from '../components/CLogo'
 import { HeroCam } from '../components/HeroCam'
+import {Button} from '../components/Button'
 
 const Hero = () => {
   const x = useControls('BigRoom', {
     positionX:{
       value: 2.5,
       min: -200,
-      max:100
+      max:300
     },
     positionY:{
       value: 2.5,
@@ -54,6 +55,45 @@ const Hero = () => {
   }
   
 )
+
+const y = useControls('AWS', {
+  positionX:{
+    value: 2.5,
+    min: -200,
+    max:100
+  },
+  positionY:{
+    value: 2.5,
+    min: -40,
+    max:100
+  },
+  positionZ:{
+    value: 2.5,
+    min: -300,
+    max:10
+  },
+  scale:{
+    value: 1,
+    min: 0.1,
+    max:10
+  },
+  rotationX:{
+    value: 2.5,
+    min: -10,
+    max:10
+  },
+  rotationY:{
+    value: 2.5,
+    min: -10,
+    max:10
+  },
+  rotationZ:{
+    value: 2.5,
+    min: -10,
+    max:10
+  },
+}
+)
 const scene = new THREE.Scene(); // initialising the scene
 scene.background = new THREE.Color("#505050");
   return (
@@ -86,19 +126,19 @@ scene.background = new THREE.Color("#505050");
                     </HeroCam>
 
                         <Atom 
-                        rotation={[9.5,2.7,3.3]}
-                        scale={0.7}
-                        position={[-12.1,-4.5,0]}
+                    rotation={[3.3,3.3,3.1]}
+                    position={[93,29,-4]}
+                    scale={6.2}
                         />
                     <AWSLogo
-                    rotation={[3.9,3.9,3.5]}
-                    position={[85,10,-94]}
-                    scale={2.2}
+                    rotation={[3.3,2.1,3.1]}
+                    position={[-91, -39, -4]}
+                    scale={3.3}
                     />
                     <VisualLogo
-                    rotation={[3.5,3.3,9.3]}
-                    position={[21,-7,-13]}
-                    scale={1.0}
+                    rotation={[3.5,3.3,3.1]}
+                    position={[100,-38,10]}
+                    scale={6.0}
                     />
                     {/* <MCDog
                     rotation={[3.7,7.1,3.3]}
@@ -106,9 +146,9 @@ scene.background = new THREE.Color("#505050");
                     scale={0.9}
                     /> */}
                     <CLogo
-                    rotation={[3.5,2.1,3.1]}
-                    position={[-150,50,-199]}
-                    scale={0.7}
+                    rotation={[3.5,2.5,3.1]}
+                    position={[-160,100,-169]}
+                    scale={0.9}
                     />
                     <EffectComposer>
                       <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
@@ -117,10 +157,14 @@ scene.background = new THREE.Color("#505050");
                     <directionalLight position={[0,0,10]} intensity={0.5}/>
                   </Suspense>
                 </Canvas>
-                <div className="next-section">
-                  <a href="#contact" style={{width: "fit-content"}}> </a>
-                </div>
         </div>
+        <div className="next-section">
+                  <a href="#contact" style={{width: "fit-content"}}> 
+                    <Button name="Let's work together" isBeam>
+                      
+                    </Button>
+                  </a>
+                </div>
     </section>
   )
 }

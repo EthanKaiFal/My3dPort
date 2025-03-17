@@ -6,7 +6,7 @@
 
 body {
   background: #010103;
-  font-family: "General Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 /*main*/
@@ -48,21 +48,23 @@ body {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  gap: 3px;
 }
 
 .greeting-text {
-  font-size: medium;
+  font-size: l;
   color: white;
   text-align: center;
-  font-family: "GeneralSans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.25;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .threejs-container {
-  min-height: 80vh;
+  min-height: 70vh;
   width: 100%;
   display: flex;
-  height: 80vh;
+  height: 60vh;
   align-self: center;
 }
 
@@ -121,7 +123,6 @@ body {
   font-weight: 600;
   background: linear-gradient(to right, #bec1cf 60%, #d5d8ea 60%, #d5d8ea 100%);
   background-clip: text;
-  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -142,8 +143,8 @@ body {
 }
 
 .nav-li {
-  color: #6b7280;
-  font-family: "Generalsans", sans-serif;
+  color: #d1d5db;
+  font-family: "Josefin Sans", sans-serif;
   padding: 0.5rem 1.25rem;
   border-radius: 0.375rem;
   transition: background-color 0.3s;
@@ -203,8 +204,23 @@ body {
   text-align: center;
   color: white;
   margin: 0 auto;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 30rem;
 }
 
+@keyframes ping {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(2.5);
+  }
+}
 .btn-ping {
   animation: ping 1s infinite;
   position: absolute;
@@ -216,8 +232,9 @@ body {
 
 .btn-ping_dot {
   position: relative;
-  width: 0.75rem;
-  height: 0.75rem;
+  max-width: 20px;
+  width: 8px;
+  height: 8px;
   background-color: #34d399;
   border-radius: 9999px;
 }
@@ -230,14 +247,7 @@ body {
   line-height: 1.25;
   background: linear-gradient(to right, #bec1cf 60%, #d5d8ea 60%, #d5d8ea 100%);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media (min-width: 768px) {
-  .hero_tag {
-    font-size: 3.125rem;
-  }
 }
 
 @media (min-width: 1024px) {

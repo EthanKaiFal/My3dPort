@@ -18,11 +18,6 @@ export const AWSLogo = (props) => {
   const { nodes, materials } = useGLTF('/models/aws_logo.glb')
     // Continuously rotate the logo around the Y-axis
     const groupRef = useRef();
-    useFrame(() => {
-        if (groupRef.current) {
-          //groupRef.current.rotation.y += 0.01  // Adjust the speed by changing the value
-        }
-      })
     useGSAP(()=>{
       gsap.to(groupRef.current.position, {
         y:groupRef.current.position.y+5.5,
