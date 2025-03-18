@@ -161,7 +161,6 @@ scene.background = new THREE.Color("#505050");
         <div className="next-section">
                   <a href="#contact" style={{width: "fit-content"}}> 
                     <Button name="Let's work together" isBeam>
-                      
                     </Button>
                   </a>
                 </div>
