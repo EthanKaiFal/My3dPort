@@ -358,6 +358,35 @@ body {
   }
 }
 
+//contact sectionnnnnnnnnnnnnnnnnnn
+.contact-section {
+  display: flex;
+  flex-direction: col;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 5px;
+}
+.contact-containers {
+  background-color: rgb(16, 17, 19);
+  border: 1px solidrgb(110, 111, 114);
+  border-radius: 0.5rem;
+  color: rgb(88, 89, 90);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-header {
+  color: white;
+  align-self: center;
+}
+
+.my-message {
+  color: rgb(88, 89, 90);
+}
 /* Space */
 .c-space {
   padding-left: 1.25rem;
@@ -365,10 +394,44 @@ body {
 }
 
 @media (min-width: 640px) {
+  .contact-section {
+    display: flex;
+    flex-direction: col;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
   .c-space {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-form {
+  background-color: rgb(38, 39, 39);
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: white;
+}
+
+.send-message-btn {
+  border-radius: 0.5rem;
+  background-color: rgb(38, 39, 39);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 10px;
 }
 
 /* Head Text */
@@ -702,6 +765,8 @@ body {
   height: 1.25rem;
   object-fit: contain;
   filter: invert(100%) brightness(0);
+  color: #f3f4f6;
+  backgroundcolor: #f3f4f6;
 }
 
 /* Footer */

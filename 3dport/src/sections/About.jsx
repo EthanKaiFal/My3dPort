@@ -1,6 +1,7 @@
 import Globe from 'react-globe.gl'
 import { Button } from '../components/Button';
 import { useState } from 'react';
+import '../index.css'
 
 const About = () => {
     const [isCopied, setCopied] = useState(false);
