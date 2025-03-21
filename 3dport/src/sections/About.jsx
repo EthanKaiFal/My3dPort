@@ -12,7 +12,7 @@ const About = () => {
         }, 2000);
     }
     return(
-        <section className="c-space" style={{marginTop:"20px", marginBottom:"20px"}}>
+        <section className="c-space" id="about" style={{marginTop:"20px", marginBottom:"20px"}}>
             About
             <div className="xl-grid md-grid bento-setup">
                 <div className="grid-item1">

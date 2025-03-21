@@ -27,7 +27,7 @@ export const myProjects = [
         desc: 'Bike Akinator is a website that helps users find the right next bike for them. My website guides users through a quiz that narrows down their options and then presents the top rated options as links to their stat pages. All stats come from user data found via the internet or from users themselves inputing information on their profiles. And then lastly this website is 100% supported by the cloud as an AWS Amplify projects that utilizes several other Amazon services. ',
         href: 'https://master.d3ao0vrc5bac3j.amplifyapp.com/',
         className:'animatedText1',
-        texture:'/textures/project/project1.mov',
+        texture:'/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
             backgroundColor: '#2A1816',
@@ -63,12 +63,12 @@ export const myProjects = [
         desc: 'LocalLyfe is mobile app with the aim to empower users with the ability to make change in their local cities/towns. The process today for affecting city development usually comes in the form of city hall meetings or social media campaigns on popular apps. We believe these methods are outdated or filtered out by the other clutter on social media apps. LocalLyfe provides a dedicated space where users can interact with only people form their cities to exchange and improve ideas they have to shape their city.',
         href: 'None',
         className:'animatedText1',
-        texture:'/textures/project/project2.mov',
+        texture:'/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
-            boxShadow: '0px 0px 60px 0px #AA3C304D',
+            backgroundColor: 'rgba(61, 168, 175, 0.3)',
+            border: '0.2px solid rgba(61, 168, 175, 0.3)',
+            boxShadow: '0px 0px 60px 0px rgba(61, 168, 175, 0.3)',
         },
         spotlight: '/assets/spotlight2.png',
         tags: [

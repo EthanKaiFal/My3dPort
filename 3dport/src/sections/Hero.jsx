@@ -159,7 +159,7 @@ scene.background = new THREE.Color("#505050");
                 </Canvas>
         </div>
         <div className="next-section">
-                  <a href="#contact" style={{width: "fit-content"}}> 
+                  <a href="#about" style={{width: "fit-content"}}> 
                     <Button name="Let's work together" isBeam>
                     </Button>
                   </a>
