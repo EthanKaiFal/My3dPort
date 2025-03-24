@@ -84,7 +84,7 @@ body {
   color: white;
 }
 
-//next section in hero
+/*next section in hero*/
 .next-section {
   position: absolute;
   bottom: 1.75rem; /* 7 * 0.25rem */
@@ -96,7 +96,7 @@ body {
   padding-right: 1.25rem;
 }
 
-//bento box
+/* bento box */
 .bento-setup {
   display: grid;
   height: 100%;
@@ -221,9 +221,9 @@ body {
   text-align: center;
 }
 
-//mneeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxttttttttttt
+/* //mneeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxttttttttttt */
 
-//projects section
+/* //projects section */
 .project-section {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -341,7 +341,7 @@ body {
 @media (min-width: 768px) {
   .computer-container {
     border: 1px solid #d1d5db; /* Equivalent to black-300 in Tailwind */
-    backgroundcolor: "#505050";
+    background-color: "#505050";
     border-radius: 0.5rem;
     height: 500px;
   }
@@ -358,7 +358,7 @@ body {
   }
 }
 
-//contact sectionnnnnnnnnnnnnnnnnnn
+/* //contact sectionnnnnnnnnnnnnnnnnnn */
 .contact-section {
   display: flex;
   flex-direction: col;
