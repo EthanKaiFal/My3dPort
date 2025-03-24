@@ -101,7 +101,6 @@ body {
   display: grid;
   height: 100%;
   gap: 5px;
-  background-color: orange;
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
