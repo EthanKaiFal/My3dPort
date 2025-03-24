@@ -38,7 +38,7 @@ const Contact = () => {
         });
     }
     catch(error){
-        alert('Soemthing went wrong!');
+        alert('Something went wrong!');
     }
     }
     return(
@@ -60,7 +60,7 @@ const Contact = () => {
                     <textarea rows="5" id="YourMessage" name="" className="input-form their-message" onChange={handleChange} placeHolder="Hi, I'm interested in..."></textarea>
                     </div>
                     <button  className="send-message-btn" type="submit">
-                        {loading ? 'Sending...' : 'Sending'} 
+                        {loading ? 'Sending...' : 'Send Message'} 
                         <img src="assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow"></img>
                     </button>
                 </form>

@@ -13,7 +13,6 @@ const MyProjects = () =>{
         currentProject = myProjects[currentIndex];
     },[currentIndex]);
     const nextProj = () => {
-        console.log("ckicked");
         if(currentIndex+1===myProjects.length){
             setCurrentIndex(0);
         }
@@ -35,12 +34,12 @@ const MyProjects = () =>{
     const scene = new THREE.Scene(); // initialising the scene
     scene.background = new THREE.Color("#505050");
     return(
-        <section className="c-space project-section">
+        <section className="c-space project-section" id="MyProjects">
             <p className="head-text">My Work</p>
             <div className="grid-container">
                 <div className="idk">
                    <div className="proj-img-container">
-                    <img src={currentProject.spotlight} alt="spotlight" className="spotlight-proj-img"/>
+                    {/* <img src={currentProject.spotlight} alt="spotlight" className="spotlight-proj-img"/> */}
                     </div> 
                     <div style={ {...currentProject.logoStyle, padding:"3px", backdropFilter:"blur(64px)",width:"fit-content",borderRadius:"0.5rem"}}>
                         <img src={currentProject.logo} alt="logo" className="logo-img"/>
@@ -53,7 +52,7 @@ const MyProjects = () =>{
                         <div style={{display:'flex', alignItems:'center', gap:3}}>
                             {currentProject.tags.map((tag,index) => (
                                 <div key={index} className="tech-logo">
-                                    <img src={tag.path} alt={tag.name}></img>
+                                    <img className="tag-img" src={tag.path} alt={tag.name}></img>
                                 </div>
                             ))}
                         </div>

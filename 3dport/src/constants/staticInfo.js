@@ -2,7 +2,7 @@ export const navLinks = [
     {
         id:1,
         name:'Home',
-        href: '#home',
+        href: '#Hero',
     },
     {
         id:2,
@@ -11,8 +11,8 @@ export const navLinks = [
     },
     {
         id:3,
-        name: 'Work',
-        href: '#work',
+        name: 'Projects',
+        href: '#MyProjects',
     },
     {
         id:4,
@@ -28,7 +28,7 @@ export const myProjects = [
         href: 'https://master.d3ao0vrc5bac3j.amplifyapp.com/',
         className:'animatedText1',
         texture:'/textures/project/project1.mp4',
-        logo: '/assets/project-logo1.png',
+        logo: '/assets/motor-logo.svg',
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',
@@ -54,7 +54,7 @@ export const myProjects = [
             {
               id: 4,
               name: 'Framer Motion',
-              path: '/assets/framer.png',
+              path: '/assets/aws.svg',
             },
           ],
     },
@@ -80,7 +80,7 @@ export const myProjects = [
             {
               id: 2,
               name: 'TailwindCSS',
-              path: 'assets/tailwindcss.png',
+              path: 'assets/expo.svg',
             },
             {
               id: 3,
@@ -90,8 +90,68 @@ export const myProjects = [
             {
               id: 4,
               name: 'Framer Motion',
-              path: '/assets/framer.png',
+              path: '/assets/firebase.svg',
             },
           ],
     }
+]
+
+export const myExperiences = [
+  {
+    id:1,
+    name:'3D Portfolio Website',
+    skill:'ReactJS + ThreeJS Programming',
+    duration:'Feb 2025 - Mar 2025',
+    title:'Created a ReactJS portfolio website with the the help of ThreeJS 3D modeling',
+    icon: '/assets/Three.js_Icon.png',
+    animation: 'victory'
+  },
+  {
+    id:2,
+    name:'Bike Akinator',
+    skill:'AWS Cloud Services + React Typescript',
+    duration:'Nov 2024 - Jan 2025',
+    title:'A fully cloud supported React website that supports users in finding the right motorcycle',
+    icon:'/assets/motor-logo.svg',
+    animation:'salute'
+  },
+  {
+    id:3,
+    name:'Revature Backend Bootcamp',
+    skill:' Spring + SQL + Backend Development',
+    duration: 'Nov 2024 - Nov 2024',
+    title: 'Completed an online bootcamp with Revature and learned about Java backend development utilizing the Spring framework',
+    icon: '/assets/revature-logo.png',
+    animation:'clapping'
+  },
+  {
+    id:4,
+    name:'AWS Cloud Practitioner',
+    skill:'AWS Cloud Services',
+    duration:'Oct 2024 - Oct 2024',
+    title: 'Completed an online course via ZeroToMastery that taught about utilizing AWS Cloud Services to support projects and businesses',
+    icon: '/assets/aws.svg',
+    animation:'salute'
+  },
+  {
+    id:5,
+    name:'Linux System Administration',
+    skill:'Linux Terminal + Bash',
+    duration:'Sept 2024 - Sept 2024',
+    title: 'Took an online course via ZeroToMastery that taught the fundamentals of utilizing the Linux console to manage the system',
+    icon: '/assets/bash-icon.svg',
+    animation:'clapping'
+  },
+  {
+    id:6,
+    name:'COMPTIA A+ IT',
+    skill:'Networks + Desktop Configuration + Hardware Troubleshooting',
+    duration:'July 2024 - August 2025',
+    title: 'Completed an online course that prepped me with knowledge to take and pass the COMPTIA A+ exam for general IT knowledge',
+    icon: '/assets/CompTIA-A.jpg',
+    animation:'victory'
+  
+  }
+
+
 ]

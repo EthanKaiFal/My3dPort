@@ -5,6 +5,8 @@ import About from './sections/About.jsx'
 import MyProjects from './sections/MyProjects.jsx'
 import Contact from './sections/Contact.jsx'
 import "./index.css"
+import { Footer } from './sections/Footer.jsx'
+import { Experience } from './sections/Experience.jsx'
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
       <Hero/>
       <About/>
       <MyProjects/>
+      <Experience/>
       <Contact/>
+      <Footer/>
     </main>
   )
 }

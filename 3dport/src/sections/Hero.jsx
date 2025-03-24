@@ -16,96 +16,19 @@ import { HeroCam } from '../components/HeroCam'
 import {Button} from '../components/Button'
 
 const Hero = () => {
-  const x = useControls('BigRoom', {
-    positionX:{
-      value: 2.5,
-      min: -200,
-      max:300
-    },
-    positionY:{
-      value: 2.5,
-      min: -40,
-      max:100
-    },
-    positionZ:{
-      value: 2.5,
-      min: -300,
-      max:10
-    },
-    scale:{
-      value: 1,
-      min: 0.1,
-      max:10
-    },
-    rotationX:{
-      value: 2.5,
-      min: -10,
-      max:10
-    },
-    rotationY:{
-      value: 2.5,
-      min: -10,
-      max:10
-    },
-    rotationZ:{
-      value: 2.5,
-      min: -10,
-      max:10
-    },
-  }
   
-)
 
-const y = useControls('AWS', {
-  positionX:{
-    value: 2.5,
-    min: -200,
-    max:100
-  },
-  positionY:{
-    value: 2.5,
-    min: -40,
-    max:100
-  },
-  positionZ:{
-    value: 2.5,
-    min: -300,
-    max:10
-  },
-  scale:{
-    value: 1,
-    min: 0.1,
-    max:10
-  },
-  rotationX:{
-    value: 2.5,
-    min: -10,
-    max:10
-  },
-  rotationY:{
-    value: 2.5,
-    min: -10,
-    max:10
-  },
-  rotationZ:{
-    value: 2.5,
-    min: -10,
-    max:10
-  },
-}
-)
 const scene = new THREE.Scene(); // initialising the scene
 scene.background = new THREE.Color("#505050");
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="Hero">
         Hero
         <div className="hero-container">
-            <p className="greeting-text">Hi, I am Ethan <span>👀</span></p>
-            <p className="hero_tag">Building & Supporting Apps</p>
+            <p className="greeting-text ">Hi yall, I am Ethan Falconer<span className="waving-hand">👀</span></p>
+            <p className="hero_tag"> A Builder of Apps and Troubleshooter of Desktops</p>
         </div>
 
         <div className="threejs-container">
-        <Leva></Leva>
                 <Canvas className='canvas'>
                   <Suspense fallback={<CanvasLoader/>}>
                     <PerspectiveCamera makeDefault 
