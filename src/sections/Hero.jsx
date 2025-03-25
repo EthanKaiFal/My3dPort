@@ -24,7 +24,7 @@ scene.background = new THREE.Color("#505050");
     <section className="hero-section" id="Hero">
         Hero
         <div className="hero-container">
-            <p className="greeting-text ">Hi yall, I am Ethan Falconer<span className="waving-hand">👀</span></p>
+            <p className="greeting-text ">Hi yall, I am Ethan Falconer a Junior IT Technician/Full Stack Developer/Cloud Engineer<span className="waving-hand">👀</span></p>
             <p className="hero_tag"> A Builder of Apps and Troubleshooter of Desktops</p>
         </div>
 
