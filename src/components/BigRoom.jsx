@@ -8,7 +8,7 @@ import { MeshMatcapMaterial } from 'three'
 
 export const BigRoom = (props) => {
   const { nodes, materials } = useGLTF('/models/creator_room.glb')
-  const screenTexture = useTexture('textures/desk/codingIMG.png')
+  const screenTexture = useTexture('textures/desk/codingIMG.jpg')
   return (
     <group {...props} dispose={null}>
       <group

@@ -14,7 +14,7 @@ export const Experience = () => {
                 <h3 className='head-text'>What I've Been Up To Since Graduation</h3>
             </div>
             <div className="work-container">
-                <div className="work-canvas">
+                <div className="work-canvas" style={{maxHeight:"1100px"}}>
                     <Canvas>
                         <ambientLight intensity={7}/>
                         <SpotLight position={[10,10,10]} angle={0.15} penubra={1}/>

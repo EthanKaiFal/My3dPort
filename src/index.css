@@ -185,7 +185,7 @@ body {
 }
 .grid-img {
   width: 100%;
-  height: fit-content;
+  height: 50%;
   object-fit: contain;
 }
 
@@ -244,6 +244,10 @@ body {
     width: 100%;
   }
 } */
+
+.shifted {
+  margin-left: 20px;
+}
 
 .idk {
   display: flex;
