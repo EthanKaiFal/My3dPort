@@ -48,16 +48,16 @@ const Contact = () => {
                 <p className="my-message">From designing front ends to setting up backend APIs to sandbox testing to cloud computing, I possess a wide variety of skills that have been developed through school, projects, and further self learning. </p>
                 <form ref={formRef} onSubmit={handleSubmit} className="form-container">
                     <div style={{display:"flex", flexDirection:"column", gap:"5px"}}>
-                    <label for="FullName"><span className="field-label">Full Name</span></label>
+                    <label htmlFor="FullName"><span className="field-label">Full Name</span></label>
                     <input type="text" id="FullName" name="FullName" className="input-form" onChange={handleChange} placeholder='John Doe'/>
                     </div>
                     <div style={{display:"flex", flexDirection:"column", gap:"5px"}}>
-                    <label for="Email"><span className="field-label">Email</span></label>
-                    <input type="text" id="Email" name="Email" className="input-form" onChange={handleChange} placeHolder="john.doe@gmail.com"/>
+                    <label htmlFor="Email"><span className="field-label">Email</span></label>
+                    <input type="text" id="Email" name="Email" className="input-form" onChange={handleChange} placeholder="john.doe@gmail.com"/>
                     </div>
                     <div style={{display:"flex", flexDirection:"column", gap:"5px"}}>
-                    <label for="YourMessage"><span className="field-label">Your Message</span></label>
-                    <textarea rows="5" id="YourMessage" name="" className="input-form their-message" onChange={handleChange} placeHolder="Hi, I'm interested in..."></textarea>
+                    <label htmlFor="YourMessage"><span className="field-label">Your Message</span></label>
+                    <textarea rows="5" id="YourMessage" name="" className="input-form their-message" onChange={handleChange} placeholder="Hi, I'm interested in..."></textarea>
                     </div>
                     <button  className="send-message-btn" type="submit">
                         {loading ? 'Sending...' : 'Send Message'} 

@@ -30,9 +30,10 @@ export const myProjects = [
         texture:'/textures/project/BikeAkinDemo3.mp4',
         logo: '/assets/motor-logo.svg',
         logoStyle: {
-            backgroundColor: '#2A1816',
-            border: '0.2px solid #36201D',
-            boxShadow: '0px 0px 60px 0px #AA3C304D',
+            backgroundColor: 'rgba(21, 207, 114, 0.3)',
+            border: '0.2px solid rgba(21, 207, 114, 0.3)',
+            boxShadow: '0px 0px 60px 0px rgba(21, 207, 114, 0.3)',
+            filter: 'invert(100%) sepia(3%) saturate(213%) hue-rotate(15deg) brightness(116%) contrast(100%)'
         },
         spotlight: '/assets/spotlight1.png',
         tags: [
@@ -63,12 +64,12 @@ export const myProjects = [
         desc: 'LocalLyfe is mobile app with the aim to empower users with the ability to make change in their local cities/towns. The process today for affecting city development usually comes in the form of city hall meetings or social media campaigns on popular apps. We believe these methods are outdated or filtered out by the other clutter on social media apps. LocalLyfe provides a dedicated space where users can interact with only people form their cities to exchange and improve ideas they have to shape their city.',
         href: 'None',
         className:'animatedText1',
-        texture:'/textures/project/LocalLyfe.MP4',
+        texture:'/textures/project/LocalLyfe.mp4',
         logo: '/assets/LocalLyfe.png',
         logoStyle: {
-            backgroundColor: 'rgba(61, 168, 175, 0.3)',
-            border: '0.2px solid rgba(61, 168, 175, 0.3)',
-            boxShadow: '0px 0px 60px 0px rgba(61, 168, 175, 0.3)',
+            backgroundColor: 'rgba(21, 207, 114, 0.3)',
+            border: '0.2px solid rgba(21, 207, 114, 0.3)',
+            boxShadow: '0px 0px 60px 0px rgba(21, 207, 114, 0.3)',
         },
         spotlight: '/assets/spotlight2.png',
         tags: [
@@ -97,6 +98,15 @@ export const myProjects = [
 ]
 
 export const myExperiences = [
+  {
+    id:0,
+    name:'IT Support Technician',
+    skill:'General IT Support',
+    duration:'Aug 2024 - Present',
+    title:'Part time IT consultant for Forum Beauty. Duties include basic IT work such as troubleshooting office devices, onboarding, and addressing other basic tickets via JIRA.',
+    icon: '/assets/BasicPrinter.svg',
+    animation: 'victory'
+  },
   {
     id:1,
     name:'3D Portfolio Website',

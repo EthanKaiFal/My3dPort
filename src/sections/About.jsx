@@ -4,12 +4,18 @@ import '../index.css'
 import { Canvas } from '@react-three/fiber';
 import { myExperiences } from "../constants/staticInfo"
 import { OrbitControls, SpotLight } from "@react-three/drei";
-import { Suspense, useState } from "react";
+import { Suspense, useState, useRef, useEffect} from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import { Printer } from '../components/Printer';
 import { PerspectiveCamera } from '@react-three/drei'
 
 const About = () => {
+    const globeEl = useRef();
+    useEffect(() => {
+        if (globeEl.current) {
+            (globeEl.current).pointOfView({ lat: 37, lng: -95, altitude: 1.0 });
+        }
+    }, [globeEl]);
     const [isCopied, setCopied] = useState(false);
     const handleCopy=()=> {
         navigator.clipboard.writeText('ethan.kai.falconer@gmail.com');
@@ -36,8 +42,8 @@ const About = () => {
                     <div className="grid-container">
                         <img src="/assets/grid3.png" alt='grid-3' className='grid-img'/>
                             <div style={{color:"white"}}>
-                                <p className="grid-headtext">My passion for coding</p>
-                                <p clasName="grid-subtext">I enjoy the act of creating projects that I can get great convenient use out of. Coding has been my chosen method of satisfying this desire and I see it as way more than a profession but instead a core method to find satisfaction in life.  </p>
+                                <p className="grid-headtext"></p>
+                                <p className="grid-subtext"></p>
                             </div>
 
                     </div>
@@ -46,17 +52,23 @@ const About = () => {
                     <div className="grid-container">
                         <div className="grid-box-cont2">
                             <Globe height={326} width={326} 
+                            ref={globeEl}
+                            cameraAutoRotate={true}
+                            cameraRotateSpeed={0.3}
+                            animateIn={true}
                             backgroundColor='rgba(0,0,0,0)' 
                             backGroundImageOpacity={0.5} 
                             showAtmosphere showGraticules 
                             globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
                             bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                             labelsData={[{
-                                lat:40, lng:-100,
+                                lat:33.66946, lng:-117.82311,
                                 text: "I'm here!",
-                                color: 'white',
-                                size:20,
+                                color: 'black',
+                                size:500,
+                                fontSize:300
                             }]}
+                            labelSize={3}
                             ></Globe>
                     
                         </div>
