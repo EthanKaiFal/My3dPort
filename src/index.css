@@ -847,7 +847,7 @@ body {
   object-fit: contain;
   filter: invert(100%) brightness(0);
   color: #f3f4f6;
-  backgroundcolor: #f3f4f6;
+  background-color: #f3f4f6;
 }
 
 /* Footer */
