@@ -109,6 +109,14 @@ export const myExperiences = [
   },
   {
     id:1,
+    name:'COMPTIA Network + IT',
+    skill:'General Network IT Support',
+    duration:'March 2025 - April 2025',
+    title:'Completed an online COMPTIA Network+ course and obtained the certification.',
+    icon: '/assets/networkplus-logo.png',
+  },
+  {
+    id:2,
     name:'3D Portfolio Website',
     skill:'ReactJS + ThreeJS Programming',
     duration:'Feb 2025 - Mar 2025',
@@ -117,7 +125,7 @@ export const myExperiences = [
     animation: 'victory'
   },
   {
-    id:2,
+    id:3,
     name:'Bike Akinator',
     skill:'AWS Cloud Services + React Typescript',
     duration:'Nov 2024 - Jan 2025',
@@ -126,7 +134,7 @@ export const myExperiences = [
     animation:'salute'
   },
   {
-    id:3,
+    id:4,
     name:'Revature Backend Bootcamp',
     skill:' Spring + SQL + Backend Development',
     duration: 'Nov 2024 - Nov 2024',
@@ -135,7 +143,7 @@ export const myExperiences = [
     animation:'clapping'
   },
   {
-    id:4,
+    id:5,
     name:'AWS Cloud Practitioner',
     skill:'AWS Cloud Services',
     duration:'Oct 2024 - Oct 2024',
@@ -144,7 +152,7 @@ export const myExperiences = [
     animation:'salute'
   },
   {
-    id:5,
+    id:6,
     name:'Linux System Administration',
     skill:'Linux Terminal + Bash',
     duration:'Sept 2024 - Sept 2024',
@@ -153,7 +161,7 @@ export const myExperiences = [
     animation:'clapping'
   },
   {
-    id:6,
+    id:7,
     name:'COMPTIA A+ IT',
     skill:'Networks + Desktop Configuration + Hardware Troubleshooting',
     duration:'July 2024 - August 2025',
