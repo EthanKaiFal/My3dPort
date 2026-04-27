@@ -34,7 +34,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext">Hi, I'm Ethan</p>
                             <p className="grid-subtext">I graduated from the University of Utah with a degree in Computer Science (2020-2024). During my time in school, I developed a strong interest in full-stack development and tailored my coursework to deepen my expertise in that area. Since graduating, I’ve broadened my focus to include the operational side of technology, gaining experience in deployments, sandbox testing, and hardware infrastructure management. As a result, I’ve been honing my skills in both IT/DevOps and full-stack development, giving me a more well-rounded understanding of technology.</p>
-                            <p className="grid-subtext">In addition to expanding my technical skills, I’ve been working as an as-needed part-time IT consultant for Forum Beauty, where I’ve gained hands-on experience managing devices in a professional setting. I’ve also taken several online courses and completed various projects to further refine my skill set, focusing on areas like cloud computing, automation, and network security to ensure I stay up to date with industry trends and best practices.</p>
+                            <p className="grid-subtext">Technology has always been something I find myself drawn to there's something about diagnosing a problem and working through it that genuinely excites me. That curiosity is what pushed me to start learning IT on my own, and it's what's kept me growing ever since. From self-study to real-world experience in healthcare IT, every step has reinforced that this is the right field for me. Outside of work I'm still at it currently studying for my CCNA in order to further enhance my knowledge on the industry.</p>
                         </div>
                     </div>
                 </div>
@@ -42,8 +42,11 @@ const About = () => {
                     <div className="grid-container">
                         <img src="/assets/grid3.png" alt='grid-3' className='grid-img'/>
                             <div style={{color:"white"}}>
-                                <p className="grid-headtext"></p>
-                                <p className="grid-subtext"></p>
+                                <p className="grid-headtext">My Time In IT</p>
+                                <p className="grid-subtext">My path in IT has been one of steady, linear growth — continuously building on a foundation that started from scratch. The full timeline is detailed further down this page, but to summarize: it all began with online courses and certifications I was studying for from my bedroom.</p>
+                                <p className="grid-subtext">While taking those courses I was also able to land a part-time position as a Support Specialist for a small beauty company in Rosemead, CA, where I applied what I was learning in real time — helping the main IT tech with tasks like onboarding and printer/desktop troubleshooting.</p>
+                                <p className="grid-subtext">That experience opened the door to my first full-time role as an IT Support Specialist at Prime Healthcare, where my knowledge grew significantly. Working the help desk in a healthcare setting exposed me to nearly every surface-level area of IT — security, networking, application support, system administration, and on-site repairs. I was responsible for working with callers to diagnose issues and either resolve them directly or coordinate with the right team. I was also brought on as an EHR Support Specialist, expanding my responsibilities to include Epic EMR-related issues and giving me hands-on experience supporting one of the more complex software platforms in the industry.</p>
+                                <p className="grid-subtext">Outside of work, I've been deepening my networking knowledge by studying for the CCNA, a certification I plan to obtain in the near future. I feel good about where my skills stand and I'm looking forward to bringing them to an on-site team as my next step.</p>
                             </div>
 
                     </div>

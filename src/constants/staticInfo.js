@@ -100,6 +100,26 @@ export const myProjects = [
 export const myExperiences = [
   {
     id:0,
+    name:'EHR Support Technician',
+    skill:'Application Support For The Epic Application',
+    duration:'Sep 2025 - Present',
+    title:'In addition to my existing IT Support duties I was given responsibilites to provide additonal level 1 support for the Epic EMR application. This means working with physicians and providers on their workflows inside of the application as well as handling basic user administration by reviewing their application accesses.',
+    icon: '/assets/primeHealth.png',
+    animation: 'victory'
+
+  },
+  {
+    id:0,
+    name:'IT Support Technician',
+    skill:'General IT Support',
+    duration:'Apr 2025 - Present',
+    title:'Full time IT Support Specialist for Prime Healthcare operating the help desk and providing over the phone assistance for 50+ hospitals. Main duties include level 1 troubleshooting/problem solving, issue documentation, team coordination, and occasional desktop field work.',
+    icon: '/assets/primeHealth.png',
+    animation: 'victory'
+
+  },
+  {
+    id:1,
     name:'IT Support Technician',
     skill:'General IT Support',
     duration:'Aug 2024 - Present',
@@ -108,7 +128,7 @@ export const myExperiences = [
     animation: 'victory'
   },
   {
-    id:1,
+    id:2,
     name:'COMPTIA Network + IT',
     skill:'General Network IT Support',
     duration:'March 2025 - April 2025',
@@ -116,7 +136,7 @@ export const myExperiences = [
     icon: '/assets/networkplus-logo.png',
   },
   {
-    id:2,
+    id:3,
     name:'3D Portfolio Website',
     skill:'ReactJS + ThreeJS Programming',
     duration:'Feb 2025 - Mar 2025',
@@ -125,7 +145,7 @@ export const myExperiences = [
     animation: 'victory'
   },
   {
-    id:3,
+    id:4,
     name:'Bike Akinator',
     skill:'AWS Cloud Services + React Typescript',
     duration:'Nov 2024 - Jan 2025',
@@ -134,7 +154,7 @@ export const myExperiences = [
     animation:'salute'
   },
   {
-    id:4,
+    id:5,
     name:'Revature Backend Bootcamp',
     skill:' Spring + SQL + Backend Development',
     duration: 'Nov 2024 - Nov 2024',
@@ -143,7 +163,7 @@ export const myExperiences = [
     animation:'clapping'
   },
   {
-    id:5,
+    id:6,
     name:'AWS Cloud Practitioner',
     skill:'AWS Cloud Services',
     duration:'Oct 2024 - Oct 2024',
@@ -152,7 +172,7 @@ export const myExperiences = [
     animation:'salute'
   },
   {
-    id:6,
+    id:7,
     name:'Linux System Administration',
     skill:'Linux Terminal + Bash',
     duration:'Sept 2024 - Sept 2024',
@@ -161,7 +181,7 @@ export const myExperiences = [
     animation:'clapping'
   },
   {
-    id:7,
+    id:8,
     name:'COMPTIA A+ IT',
     skill:'Networks + Desktop Configuration + Hardware Troubleshooting',
     duration:'July 2024 - August 2025',
